@@ -114,7 +114,7 @@ a {
   margin: 1rem auto;
   max-width: 80%;
   height: auto;
-  width: 30rem;
+  width: auto;
   border-radius: 0.3rem;
   align-items: center;
 }
@@ -148,4 +148,60 @@ footer a:hover {
 }
 #attiva_dropdown{
   background-color: #2b4349;
+}
+
+.attivita {
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  display: flex; /* New: Use flexbox for layout */
+}
+
+.attivita:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.attivita h1 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #333;
+}
+
+.attivita img {
+  width: 12.5rem;
+  /*ho dovuto inserire fit content invece che auto perchè, quando rimpicciolivo di molto la pagina, le immagini venivano di una misura sbagliata*/
+  height:fit-content;
+  object-fit: cover;
+  /*con questo comando si inseriscono i bordi soltanto da un lato, facendo così */
+  border-radius: 0.5rem 0 0 0.5rem;
+  
+}
+
+.attivita .descrizione {
+  /*grazie a questo comando la descrizione riempie completamente lo spazio, diventando completamente flessibile*/
+  flex: 1;
+  padding: 1rem;
+  color: #666;
+  height: fit-content;
+}
+/*il video risulta parecchio piccolo, valutare se non è meglio staccare un pò la pagina e non inserirlo come viene fatto con le immagini*/
+.attivita video{
+  width: 7rem;
+  height: 13rem;
+  border-radius: 1rem;
+}
+.avvisa{
+  float: both;
+}
+/*aggiungo un avviso in bold in modo che l'utente lo noti maggiormente!!*/
+.avviso{
+  font-weight: bold;
+  float: both;
+  flex: 1;
+  padding: 1rem;
+  color: #666;
+  height: fit-content;
 }

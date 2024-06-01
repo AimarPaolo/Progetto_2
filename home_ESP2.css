@@ -108,7 +108,9 @@ a {
   color: #487f2c;
   font-style: italic;
 }
-
+#introduzione{
+  float:right;
+}
 #logo {
   align-content: center;
   display: block;
@@ -122,9 +124,13 @@ a {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); 
   align-items: center;
 }
-
+.immagine{
+  clear:right;
+  float:left;
+}
 #forest_home {
-  display: block;
+  float:left;
+  clear:right;
   margin: 1rem auto;
   max-width: 80%;
   height: 20rem;

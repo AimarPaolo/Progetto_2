@@ -26,8 +26,8 @@
         <!--in questo caso inserisco il php per dichiarare la lingua del documento-->
         <meta name="keywords" lang="<?php echo $lang?>" content="html">
         <meta name="description" content="Pagina di acquisto dei biglietti">
-        <!--in questo caso faccio un refresh della pagina ogni minuto per aggiornarla, le operazioni dell'utente non sono molte quindi ha 
-        senso aggiornarla ogni minuto-->
+        <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
+        non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
         <meta http-equiv="refresh" content="600">
         <link rel="stylesheet" href="Home_ESP2.css">
         <!--per il momento inserisco il riferimento della pagina ma non so ancora se sia necessario utilizzare il codice js per controllare i dati-->
@@ -72,14 +72,16 @@
     </div> 
     <h1>Home page Artesina</h1>
     <!--divido in paragrafi la pagina assegnando a quelli più particolari un capitoletto per aiutare e guidare l'utente nella lettura del sito-->
-    <p>
+    <p id="introduzione">
     Artesina è una rinomata stazione sciistica situata nelle Alpi Marittime, nella regione del Piemonte, Italia. 
     Parte del comprensorio sciistico Mondolè Ski, che include anche Prato Nevoso e Frabosa Soprana, Artesina offre una vasta 
     gamma di attività sia per gli amanti degli sport invernali che per coloro che cercano altre forme di svago e divertimento in montagna. 
     Questa località incantevole è una meta ideale per famiglie, gruppi di amici e sportivi, grazie alla varietà di esperienze che può 
     offrire durante tutto l'anno.
-    <img id="forest_home" src="../immagini/forest_home.jpeg" alt="caricamento immagine bosco">
     </p>
+    <div class="immagine">
+        <img id="forest_home" src="../immagini/forest_home.jpeg" alt="caricamento immagine bosco">
+    </div>
     <h2>Sci e Snowboard</h2>
     <p>
     Artesina è particolarmente apprezzata dagli sciatori e snowboarder di tutti i livelli grazie alle sue piste ben curate e ai 
@@ -168,7 +170,9 @@
     range of activities for both winter sports enthusiasts and those seeking other forms of leisure and fun in the mountains. 
     This charming location is an ideal destination for families, groups of friends, and sports enthusiasts, thanks to the variety of experiences it can offer throughout the year.
     </p>
-    <div><img id="forest_home" src="../immagini/forest_home.jpeg" alt="forest image loading"></div>
+    <div class="immagine">
+        <img id="forest_home" src="../immagini/forest_home.jpeg" alt="forest image loading">
+    </div>
     <h2>Skiing and Snowboarding</h2>
     <p>
     Artesina is particularly popular with skiers and snowboarders of all levels thanks to its well-groomed slopes and 
