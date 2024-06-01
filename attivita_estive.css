@@ -34,6 +34,8 @@
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(16, 51, 4);
+  /*aggiungo anche in questo caso border color in modo da far colorare anche il bordo quando viene selezionato*/
+  border-color: rgb(16, 51, 4);
 }
 
 .dropdown-content {

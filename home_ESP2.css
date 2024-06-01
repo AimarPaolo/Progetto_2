@@ -34,6 +34,8 @@
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(16, 51, 4);
+  /*aggiungo anche in questo caso border color in modo da far colorare anche il bordo quando viene selezionato*/
+  border-color: rgb(16, 51, 4);
 }
 
 .dropdown-content {
@@ -108,12 +110,16 @@ a {
 }
 
 #logo {
+  align-content: center;
   display: block;
   margin: 1rem auto;
   max-width: 80%;
   height: auto;
-  width: 30rem;
+  width: auto;
   border-radius: 0.3rem;
+  /*aggiungo dei bordi e delle ombre per integrare in mdoo migliore l'immagine dentro al sito web */
+  border: 0.2rem solid #ccc; 
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); 
   align-items: center;
 }
 
@@ -121,8 +127,8 @@ a {
   display: block;
   margin: 1rem auto;
   max-width: 80%;
-  height: 40rem;
-  width: 30rem;
+  height: 20rem;
+  width: 15rem;
   border-radius: 0.3rem;
 }
 
@@ -146,5 +152,32 @@ footer a {
 
 footer a:hover {
   color: #ddd;
+}
+form {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+form input[type="submit"] {
+  padding: 0.3rem 1.25rem;
+  margin: 0 0.3125rem;
+  color: white;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+form input[type="submit"][value="it"] {
+  background-color: #014c3e;
+}
+
+form input[type="submit"][value="en"] {
+  background-color: #09392d;
+}
+
+form input[type="submit"] {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
