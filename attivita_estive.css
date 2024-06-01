@@ -107,7 +107,7 @@ a {
   font-style: italic;
 }
 
-#logo {
+ img {
   display: block;
   margin: 1rem auto;
   max-width: 80%;
@@ -117,14 +117,6 @@ a {
   align-items: center;
 }
 
-#forest_home {
-  display: block;
-  margin: 1rem auto;
-  max-width: 80%;
-  height: 40rem;
-  width: 30rem;
-  border-radius: 0.3rem;
-}
 
 footer {
   /*inserisco un opacity per non trascurare troppo il testo dietro e per lasciare la mail e il numero di cellulare divisi */
@@ -148,3 +140,10 @@ footer a:hover {
   color: #ddd;
 }
 
+
+.attiva{
+  background-color: #2b4349;
+}
+#attiva_dropdown{
+  background-color: #2b4349;
+}
