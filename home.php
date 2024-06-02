@@ -49,7 +49,6 @@
             leggermente confuso. Meglio utilizzare oggetti più intuitivi che aiutino il cliente a capire come spostarsi-->
             <a  class="attiva"href="home.php">Home</a>
             <a href="#">Aggiornamenti impianti</a>
-            <a href="#">Iscriviti ad una attività</a>
             <a href="skipass.html">Acquisto skipass</a>
             <div class="dropdown">
                 <button class="dropbtn">Esperienze
@@ -144,7 +143,6 @@
         slightly confused. Better to use more intuitive objects that help the customer understand how to move -->
         <a  class="attiva" href="home.php">Home</a>
         <a href="#">Updates</a>
-        <a href="#">Sign up for Activities</a>
         <a href="#">Purchase Lift Tickets</a>
         <div class="dropdown">
             <button class="dropbtn">Experiences

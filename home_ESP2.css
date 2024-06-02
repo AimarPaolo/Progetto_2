@@ -33,7 +33,7 @@
   margin-top: 0.6rem;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropdown {
+.navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(16, 51, 4);
   /*aggiungo anche in questo caso border color in modo da far colorare anche il bordo quando viene selezionato*/
   border-color: rgb(16, 51, 4);
@@ -120,9 +120,10 @@ a {
   height: auto;
   width: auto;
   border-radius: 0.3rem;
-  /*aggiungo dei bordi e delle ombre per integrare in mdoo migliore l'immagine dentro al sito web */
-  border: 0.2rem solid #ccc; 
-  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); 
+  /*aggiungo dei bordi e delle ombre per integrare in mdoo migliore l'immagine dentro al sito web --> tolti perchè l'immagine non era adatta 
+  ad avere dei bordi*/
+  /*border: 0.2rem solid #ccc; 
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); */
   align-items: center;
 }
 .immagine{

@@ -1,6 +1,15 @@
+/*utilizzo use strict per avere un file che viene controllato in modo molto più ristretto (meno possibilità di errore sulla dichiarazione 
+    delle variabili*/
+"use strict";
 function validateForm(f1){
     const form1 = document.getElementById(f1);
+    let contatore = document.getElementById(f1).counter1.value;
     let data_acquistata = form1.calendario.value;
+    /*controllo inoltre che l'utente abbia acquistato almeno un biglietto*/
+    if(contatore == "" || contatore == 0){
+        window.alert("Acquistare almeno un biglietto per procedere al carrello");
+        return false;
+    }
     if(data_acquistata == ""){
         window.alert("Prima di acquistare devi selezionare una data");
         return false;
@@ -32,11 +41,23 @@ function validateForm(f1){
         window.alert("Il giorno inserito è già passato, inseriscine un altro.")
         return false;
     }else{
-        window.alert("okk");
         return true;
     }
+}
+function incrementValue(f1, idCounter, valore){
+    const fo1 = document.getElementById(f1);
+    let counterElem = document.getElementById(idCounter);
+    let counter = document.getElementById(idCounter).value;
+    document.getElementById(idCounter).value = parseInt(counter) + 1;
+    let increment = parseFloat(valore);   
+}
 
-
-
-
+function decrementValue(f1, idCounter, valore){
+    /*inserisco il controllo che decremento solo se il numero è maggiore di uno, in quanto non avrebbe comprare -1 biglietti...*/ 
+    if(document.getElementById(idCounter).value == 0){
+        return
+    }
+    /*utilizzo le variabili dichiarate come let in quanto più consistenti rispetto alle var*/
+    let counter = document.getElementById(idCounter).value;
+    document.getElementById(idCounter).value = parseInt(counter) - 1;
 }

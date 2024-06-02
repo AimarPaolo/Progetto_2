@@ -16,11 +16,11 @@
     <div class="navbar">
         <a href="home.php">Home</a>
         <a href="#">Aggiornamenti impianti</a>
-        <a href="#">Iscriviti ad una attività</a>
         <a class="attiva" href="skipass.html">Acquisto skipass</a>
         <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
         <div class="dropdown">
-            <button class="dropbtn">Esperienze
+            <button class="dropbtn">
+                Esperienze
             </button>
             <div class="dropdown-content">
                 <a href="attivita_estive.html">Estive</a>
@@ -34,12 +34,57 @@
         <div>
             Seleziona il giorno in cui vuoi acquistare lo skipass: 
             <input type="date" id="calendario" name="calendario">
+        </div>
+        <div>
+            Selezionare quanti biglietti si vogliono acquistare:
+            <input type = "button" id="decrementa1" class="contatore" value="-" onclick="decrementValue('form1', 'counter1',-59.9);">
+            <input type="text" id="counter1" name="counter1" value="0" readonly>
+            <input type = "button" id="incrementa1" class="contatore" value="+" onclick="incrementValue('form1', 'counter1', 59.9);">
+        </div>
+        <img id="vista" src="../immagini/ski_places_artesina.jpeg" alt="artesina">
+        <!--aggiungo un radio button per far selezionare all'utente il tipo di skipass che desidera ed applicarli in quel modo la tariffa
+        corretta. Ci sono diverse tipologie di skipass -> giornaliero, pomeridiano, settimanale oppure stagionale-->
+        <div class="tipi_skipass">
+            <div class="acapo">
+                <input type="radio" id="giornaliero" name="skipass" value="giornaliero" checked>
+            <!--aggiungo il pulsante checked per essere sicuro che almeno una delle opzioni sia selezionata, in modo da non avere poi degli errori nella CONSEGNA
+            dei valori nel form. Sarà poi necessario controllare che questi valori siano settati anche dal lato server in quanto non sappiamo se questi valori
+            saranno -->
+            <!--provo ad inserirli dentro ad un div per poi mandarli a capo ogni volta, non so se sia il modo più pulito di procedere, provare a chiedere al docente-->
+
+                <label for="giornaliero">
+                    Skipass Giornaliero: Valido per l'intera giornata dalle 8:00 alle 17:00. Perfetto per chi vuole sfruttare al massimo 
+                    una giornata di sci.
+                </label>
+            </div>
+            <div class="acapo">
+            <input type="radio" id="pomeridiano" name="skipass" value="pomeridiano">
+                <label for="pomeridiano">
+                    Skipass Pomeridiano: Valido dalle 12:00 alle 17:00. Ideale per chi preferisce sciare nel pomeriggio.
+                </label>
+            </div>
+            <div class="acapo">
+            <input type="radio" id="settimanale" name="skipass" value="settimanale">
+                <label for="settimanale">
+                    Skipass Settimanale: Valido per 7 giorni consecutivi. La scelta migliore per chi pianifica una 
+                    vacanza prolungata.
+                </label>
+            </div>
+            <div class="acapo">
+            <input type="radio" id="stagionale" name="skipass" value="stagionale">
+            <label for="stagionale">
+                Skipass Stagionale: Valido per l'intera stagione sciistica. Per gli appassionati che vogliono godere della 
+                neve ogni volta che desiderano.
+            </label>
+            </div>
+        </div>
+        <div>
             <input type="submit" id="consegna" name="consegna" value="acquista">
         </div>
     </form>
     <!--inserito un logo che, una volta premuto, riporta alla pagina home del sito, verrà inserito in tutte le altre pagine del sito 
     in modo da dare la possibilità agli utenti di riaccedere alla pagina senza utilizzare la nav bar-->
-    <a href="home.php"><img src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
+    <a href="home.php"><img id="logo" src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
     <footer>
         <div>Contatti: </div>
         <a href="mailto:info@artesina.it"><div>Email: info@artesina.it</div></a>
