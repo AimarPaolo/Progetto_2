@@ -10,7 +10,7 @@
   font-size: 1rem;
   color: white;
   text-align: center;
-  padding: 0.875rem 1rem;
+  padding: 1rem 1rem;
   text-decoration: none;
 }
 
@@ -28,11 +28,12 @@
   background-color: inherit;
   font-family: inherit;
   /*devo modificare qui i margini altrimenti la scritta non viene centrata rispetto alle altre (modificata guardando da ispeziona ed 
-  inserendo il valore che andava ad allineare alle altre parole la scritta*/
-  margin-top: 0.3rem
+  inserendo il valore che andava ad allineare alle altre parole la scritta
+  margin-top: 0.3rem*/
+  margin-top: 0.6rem;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn, .dropdown {
   background-color: rgb(16, 51, 4);
   /*aggiungo anche in questo caso border color in modo da far colorare anche il bordo quando viene selezionato*/
   border-color: rgb(16, 51, 4);

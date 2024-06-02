@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home page artesina</title>
+        <meta name="author" content="Paolo Aimar">
+        <meta name="keywords" lang="it" content="html">
+        <meta name="description" content="Pagina di acquisto dei biglietti">
+        <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
+        non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
+        <meta http-equiv="refresh" content="600">
+        <link rel="stylesheet" href="skipass.css">
+        <script src="controllo_validita_skipass.js"></script>
+    </head>
+    <body>
+    <div class="navbar">
+        <a href="home.php">Home</a>
+        <a href="#">Aggiornamenti impianti</a>
+        <a href="#">Iscriviti ad una attività</a>
+        <a class="attiva" href="skipass.html">Acquisto skipass</a>
+        <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
+        <div class="dropdown">
+            <button class="dropbtn">Esperienze
+            </button>
+            <div class="dropdown-content">
+                <a href="attivita_estive.html">Estive</a>
+                <a href="attivita_invernali.html">Invernali</a>
+            </div>
+        </div>
+    </div> 
+    <h1>Acquista il tuo skipass</h1>
+    <!--in questo caso è necessario controllare che la data inserita sia superiore a quella -->
+    <form action="#" method="get" name="form1" id="form1" onsubmit="return validateForm('form1');">
+        <div>
+            Seleziona il giorno in cui vuoi acquistare lo skipass: 
+            <input type="date" id="calendario" name="calendario">
+            <input type="submit" id="consegna" name="consegna" value="acquista">
+        </div>
+    </form>
+    <!--inserito un logo che, una volta premuto, riporta alla pagina home del sito, verrà inserito in tutte le altre pagine del sito 
+    in modo da dare la possibilità agli utenti di riaccedere alla pagina senza utilizzare la nav bar-->
+    <a href="home.php"><img src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
+    <footer>
+        <div>Contatti: </div>
+        <a href="mailto:info@artesina.it"><div>Email: info@artesina.it</div></a>
+        <a href="callto:+390174242000"><div>Cellulare: +39 0174 242000</div></a>
+    </footer>
+    </body>
+<html>

@@ -30,8 +30,6 @@
         non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
         <meta http-equiv="refresh" content="600">
         <link rel="stylesheet" href="Home_ESP2.css">
-        <!--per il momento inserisco il riferimento della pagina ma non so ancora se sia necessario utilizzare il codice js per controllare i dati-->
-        <script src="home_ESP2.js"></script>
     </head>
     <body>
     <?php
@@ -52,7 +50,7 @@
             <a  class="attiva"href="home.php">Home</a>
             <a href="#">Aggiornamenti impianti</a>
             <a href="#">Iscriviti ad una attività</a>
-            <a href="#">Acquisto skipass</a>
+            <a href="skipass.html">Acquisto skipass</a>
             <div class="dropdown">
                 <button class="dropbtn">Esperienze
                 </button>
@@ -145,7 +143,7 @@
         <!-- I use a menu to link the pages, other buttons could be used, but the user might get
         slightly confused. Better to use more intuitive objects that help the customer understand how to move -->
         <a  class="attiva" href="home.php">Home</a>
-        <a href="#">Facility Updates</a>
+        <a href="#">Updates</a>
         <a href="#">Sign up for Activities</a>
         <a href="#">Purchase Lift Tickets</a>
         <div class="dropdown">
