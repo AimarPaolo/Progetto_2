@@ -55,7 +55,7 @@
                 </button>
                 <div class="dropdown-content">
                     <a href="attivita_estive.html">Estive</a>
-                    <a href="#">Invernali</a>
+                    <a href="attivita_invernali.html">Invernali</a>
                 </div>
         </div>
         <?php
@@ -149,7 +149,7 @@
             </button>
             <div class="dropdown-content">
                 <a href="attivita_estive.html">Summer</a>
-                <a href="#">Winter</a>
+                <a href="attivita_invernali.html">Winter</a>
             </div>
         </div>
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">

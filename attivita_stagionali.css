@@ -1,6 +1,6 @@
 .navbar {
   overflow: hidden;
-  /*utilizzo colori che possono essere in palette con la montagna, ad esempio verde, marrone e verde pino */
+  /* utilizzo colori che possono essere in palette con la montagna, ad esempio verde, marrone e verde pino */
   background-color: #366120;
   font-family: Arial, sans-serif;
 }
@@ -27,15 +27,14 @@
   padding: 0.875rem 1rem;
   background-color: inherit;
   font-family: inherit;
-  /*devo modificare qui i margini altrimenti la scritta non viene centrata rispetto alle altre (modificata guardando da ispeziona ed 
-  inserendo il valore che andava ad allineare alle altre parole la scritta
-  margin-top: 0.3rem*/
+  /* devo modificare qui i margini altrimenti la scritta non viene centrata rispetto alle altre (modificata guardando da ispeziona ed 
+  inserendo il valore che andava ad allineare alle altre parole la scritta */
   margin-top: 0.6rem;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropdown {
   background-color: rgb(16, 51, 4);
-  /*aggiungo anche in questo caso border color in modo da far colorare anche il bordo quando viene selezionato*/
+  /* aggiungo anche in questo caso border color in modo da far colorare anche il bordo quando viene selezionato */
   border-color: rgb(16, 51, 4);
 }
 
@@ -46,8 +45,8 @@
   min-width: 10rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 1;
-
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -55,20 +54,18 @@
   text-decoration: none;
   display: block;
   text-align: left;
-
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
-
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.attiva{
-  background-color: #1b3734;
+.attiva {
+  background-color: #2b4349;
 }
 
 body {
@@ -104,13 +101,14 @@ a {
   text-decoration: none;
   font-size: 1rem;
 }
-.link{
-  /*cambio le caratteristiche dei link in modo che l'utente riesca a capire che sia possibile utilizzarli per collegarsi ad altre pagine*/
+
+.link {
+  /* cambio le caratteristiche dei link in modo che l'utente riesca a capire che sia possibile utilizzarli per collegarsi ad altre pagine */
   color: #487f2c;
   font-style: italic;
 }
 
- img {
+img {
   display: block;
   margin: 1rem auto;
   max-width: 80%;
@@ -120,16 +118,15 @@ a {
   align-items: center;
 }
 
-
 footer {
-  /*inserisco un opacity per non trascurare troppo il testo dietro e per lasciare la mail e il numero di cellulare divisi */
+  /* inserisco un opacity per non trascurare troppo il testo dietro e per lasciare la mail e il numero di cellulare divisi */
   opacity: 0.5;
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1rem;
-  /*se voglio posso anche farlo che segua la pagina e che si veda in tutti i casi facendo 
-  position:fixed...*/
+  /* se voglio posso anche farlo che segua la pagina e che si veda in tutti i casi facendo 
+  position:fixed... */
   width: 100%;
   bottom: 0;
 }
@@ -141,14 +138,6 @@ footer a {
 
 footer a:hover {
   color: #ddd;
-}
-
-
-.attiva{
-  background-color: #2b4349;
-}
-#attiva_dropdown{
-  background-color: #2b4349;
 }
 
 .attivita {
@@ -173,34 +162,30 @@ footer a:hover {
 
 .attivita img {
   width: 12.5rem;
-  /*ho dovuto inserire fit content invece che auto perchè, quando rimpicciolivo di molto la pagina, le immagini venivano di una misura sbagliata*/
-  height:fit-content;
+  /* ho dovuto inserire fit content invece che auto perchè, quando rimpicciolivo di molto la pagina, le immagini venivano di una misura sbagliata */
+  height: fit-content;
   object-fit: cover;
-  /*con questo comando si inseriscono i bordi soltanto da un lato, facendo così */
+  /* con questo comando si inseriscono i bordi soltanto da un lato, facendo così */
   border-radius: 0.5rem 0 0 0.5rem;
-  
 }
 
 .attivita .descrizione {
-  /*grazie a questo comando la descrizione riempie completamente lo spazio, diventando completamente flessibile*/
+  /* grazie a questo comando la descrizione riempie completamente lo spazio, diventando completamente flessibile */
   flex: 1;
   padding: 1rem;
   color: #666;
   height: fit-content;
 }
-/*il video risulta parecchio piccolo, valutare se non è meglio staccare un pò la pagina e non inserirlo come viene fatto con le immagini*/
-.attivita video{
+
+/* il video risulta parecchio piccolo, valutare se non è meglio staccare un pò la pagina e non inserirlo come viene fatto con le immagini */
+.attivita video {
   width: 7rem;
   height: 13rem;
   border-radius: 1rem;
 }
-.avvisa{
-  float: both;
-}
-/*aggiungo un avviso in bold in modo che l'utente lo noti maggiormente!!*/
-.avviso{
+
+.avviso {
   font-weight: bold;
-  float: both;
   flex: 1;
   padding: 1rem;
   color: #666;

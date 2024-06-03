@@ -46,8 +46,8 @@
   min-width: 10rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 1;
-
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -55,19 +55,17 @@
   text-decoration: none;
   display: block;
   text-align: left;
-
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
-
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.attiva{
+.attiva {
   background-color: #1b3734;
 }
 
@@ -76,50 +74,50 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
 
 h1 {
   text-align: center;
   color: #1c288d;
-  margin-top: 1.25rem; 
-  font-size: 2rem; 
+  margin-top: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
-  text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.1); 
+  text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
 }
-
 
 form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 1.25rem; 
-  padding: 1.25rem; 
+  margin: 1.25rem;
+  padding: 1.25rem;
   background-color: #fff;
   border-radius: 0.625rem;
-  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 form div {
-  margin-bottom: 0.625rem; 
-  font-size: 1.125rem; 
+  margin-bottom: 0.625rem;
+  font-size: 1.125rem;
 }
+
 /*aggiungo dashed per dare un font particolare che attragga l'attenzione su questa
 parte della pagina*/
 input[type="date"] {
-  padding: 0.3125rem; 
-  font-size: 1rem; 
+  padding: 0.3125rem;
+  font-size: 1rem;
   margin-right: 0.625rem;
   border-color: #8085b5;
-  border-style: dashed; 
+  border-style: dashed;
 }
 
 /*ho inserito i bordi di 4rem di raggio, successivamente ho modificato la larghezza 
 del text in modo che non risultasse troppo sproporzionato rispetto al testo 
 (la quantità di skipass è difficilmente superioriore a 50/100 quindi non aveva senso
 farlo così grande come quello di default*/
-#counter1{
+#counter1 {
   border-radius: 4rem;
   padding: 0.02rem, 0.5rem;
   width: 3rem;
@@ -127,12 +125,12 @@ farlo così grande come quello di default*/
 }
 
 input[type="submit"], input[type="button"] {
-  padding: 0.3125rem 0.625rem; 
-  font-size: 1rem; 
+  padding: 0.3125rem 0.625rem;
+  font-size: 1rem;
   background-color: #333;
   color: #fff;
   border: none;
-  border-radius: 0.3125rem; 
+  border-radius: 0.3125rem;
   cursor: pointer;
 }
 
@@ -153,28 +151,29 @@ input[type="submit"]:hover, input[type="button"]:hover {
 
 img#vista {
   display: block;
-  margin: 1.25rem auto; 
+  margin: 1.25rem auto;
   max-width: 50%;
   height: 20rem;
   border-radius: 0.625rem;
-  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 0.625rem 0; 
+  padding: 0.625rem 0;
   width: 100%;
   bottom: 0;
 }
 
 footer div, footer a {
-  margin: 0.3125rem 0; 
+  margin: 0.3125rem 0;
 }
+
 /*inserisco clear left per mandare ogni volta a capo*/
-.acapo{
-  clear:right
+.acapo {
+  clear: right;
 }
 
 footer a {
@@ -185,6 +184,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-a{
+
+a {
   align-items: center;
 }
