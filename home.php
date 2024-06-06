@@ -18,13 +18,15 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="it">
+<!--in questo caso inserisco una variabile di sessione per indicare se la pagina che sto visualizzando in questo momento è in italiano 
+oppure in inglese-->
+<html lang="<?php echo $lang?>">
     <head>
         <meta charset="UTF-8">
         <title>attività estive programmate</title>
         <meta name="author" content="Paolo Aimar">
         <!--in questo caso inserisco il php per dichiarare la lingua del documento-->
-        <meta name="keywords" lang="<?php echo $lang?>" content="html">
+        <meta name="keywords" content="html">
         <meta name="description" content="Pagina di acquisto dei biglietti">
         <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
         non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
