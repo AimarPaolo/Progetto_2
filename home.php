@@ -130,7 +130,7 @@ oppure in inglese-->
     <a href="home.php"><img id="logo" src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
     <!--inserisco un footer per contattare la reception di artesina per avere informazioni-->
     <footer>
-            <div>Contatti</div>
+            <div>Contatti: </div>
             <a href="mailto:info@artesina.it"><div>email: info@artesina.it</div></a>
             <a href="callto:+390174242000"><div>telefono: +39 0174 242000</div></a>
     </footer>
@@ -211,7 +211,7 @@ oppure in inglese-->
     </p>
     <a href="home.php"><img id="logo" src="../immagini/logo.jpg" alt="loading artesina logo"></a>
     <footer>
-        <div>Contact</div>
+        <div>Contact: </div>
         <a href="mailto:info@artesina.it"><div>Email: info@artesina.it</div></a>
         <a href="callto:+390174242000"><div>Phone: +39 0174 242000</div></a>
     </footer>

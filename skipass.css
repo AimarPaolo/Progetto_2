@@ -137,6 +137,15 @@ input[type="submit"], input[type="button"] {
 input[type="submit"]:hover, input[type="button"]:hover {
   background-color: #555;
 }
+.txt_email{
+  text-align: center;
+}
+
+#email{
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border-width: 0.10rem;
+}
 
 #logo {
   align-content: center;
