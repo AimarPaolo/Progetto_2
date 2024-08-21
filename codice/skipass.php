@@ -1,4 +1,6 @@
-
+<?php
+    include("aperturaSessioni.php");
+?>
 <!DOCTYPE html>
 <html lang="it">
     <head>
@@ -10,9 +12,9 @@
         <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
         non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
         <meta http-equiv="refresh" content="600">
-        <link rel="stylesheet" href="skipass.css">
+        <link rel="stylesheet" href="../css/skipass.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="controllo_validita_skipass.js"></script>
+        <script src="../javascript/controllo_validita_skipass.js"></script>
     </head>
     <body>
     <div class="navbar">
@@ -33,10 +35,17 @@
     <h1>Acquista il tuo skipass</h1>
     <!--in questo caso è necessario controllare che la data inserita sia superiore a quella -->
     <form action="carrello.php" method="get" name="form1" id="form1" onsubmit="return validateForm('form1');">
-        <div>
+            <?php
+            if(isset($_SESSION["calendario"])){
+                $data = $_SESSION["calendario"];
+                echo "<div>continua a prenotare nella seguente data: $data</div>";
+            }else{
+                echo "<div>
             Seleziona il giorno in cui vuoi acquistare lo skipass: 
-            <input type="date" id="calendario" name="calendario">
-        </div>
+            <input type=\"date\" id=\"calendario\" name=\"calendario\">
+            </div>";
+            }
+            ?>
         <div>
             Selezionare quanti biglietti si vogliono acquistare:
             <input type = "button" id="decrementa1" class="contatore" value="-" onclick="decrementValue('form1', 'counter1',-59.9);">
@@ -56,36 +65,43 @@
 
                 <label for="giornaliero">
                     Skipass Giornaliero: Valido per l'intera giornata dalle 8:00 alle 17:00. Perfetto per chi vuole sfruttare al massimo 
-                    una giornata di sci.
+                    una giornata di sci. -> costo: 33 €
                 </label>
             </div>
             <div class="acapo">
             <input type="radio" id="pomeridiano" name="skipass" value="pomeridiano">
                 <label for="pomeridiano">
-                    Skipass Pomeridiano: Valido dalle 12:00 alle 17:00. Ideale per chi preferisce sciare nel pomeriggio.
+                    Skipass Pomeridiano: Valido dalle 12:00 alle 17:00. Ideale per chi preferisce sciare nel pomeriggio. -> costo: 21 €
                 </label>
             </div>
             <div class="acapo">
             <input type="radio" id="settimanale" name="skipass" value="settimanale">
                 <label for="settimanale">
                     Skipass Settimanale: Valido per 7 giorni consecutivi. La scelta migliore per chi pianifica una 
-                    vacanza prolungata.
+                    vacanza prolungata. -> costo: 150 €
                 </label>
             </div>
             <div class="acapo">
             <input type="radio" id="stagionale" name="skipass" value="stagionale">
             <label for="stagionale">
                 Skipass Stagionale: Valido per l'intera stagione sciistica. Per gli appassionati che vogliono godere della 
-                neve ogni volta che desiderano.
+                neve ogni volta che desiderano. -> costo: 800 €
             </label>
             </div>
-            <div class="txt_email">
+            <?php
+            if(isset($_SESSION["email"])){
+                $mail = $_SESSION["email"];
+                echo "<p>Stai utilizzando già la mail: $mail</p>";
+            }else{
+            echo "<div class=\"txt_email\">
                 <!--attraverso il metodo input type=email non è necessario effettuare un 
                 controllo js per verificare che la mail inserita sia corretta 
                 in quanto viene già segnalato automaticamente all'utente
                 -->
-                Inserisci la email: <input type="email" name="email" id="email" placeholder="inserisci la mail...">
-            </div>
+                Inserisci la email: <input type=\"email\" name=\"email\" id=\"email\" placeholder=\"inserisci la mail...\" required>
+            </div>";
+            }
+            ?>
         </div>
         <div>
             <input type="submit" id="consegna" name="consegna" value="acquista">

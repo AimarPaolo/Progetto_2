@@ -31,7 +31,7 @@ oppure in inglese-->
         <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
         non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
         <meta http-equiv="refresh" content="600">
-        <link rel="stylesheet" href="Home_ESP2.css">
+        <link rel="stylesheet" href="../css/Home_ESP2.css">
     </head>
     <body>
     <?php
