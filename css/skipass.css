@@ -227,3 +227,43 @@ a {
 .closebtn:hover {
   color: black;
 }
+.header {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+  color: #366120;
+}
+
+h3{
+  color:#366120;
+  font-weight: bold;
+}
+.progress-container {
+  position: fixed;
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  /*faccio la sbarra opaca per evitare che si sovrapponga con il resto del testo*/
+  opacity: 0.3;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+.content {
+  padding: 2rem;
+  margin-left: 3rem;
+  width: 80%;
+}
+.successo{
+  color:green;
+  margin-left: 2rem;
+}

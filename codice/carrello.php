@@ -35,7 +35,7 @@
         <body>
             <div class="navbar">
                 <a href="home.php">Home</a>
-                <a href="#">Aggiornamenti impianti</a>
+                <a href="news.html">Aggiornamenti impianti</a>
                 <a href="skipass.php">Acquisto skipass</a>
                 <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
                 <div class="dropdown">

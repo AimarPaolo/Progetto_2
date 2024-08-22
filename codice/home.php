@@ -50,7 +50,7 @@ oppure in inglese-->
             <!--utilizzo un menù per collegare le pagine, volendo si potevano anche utilizzare altri bottoni ma l'utente potrebbe rimanere 
             leggermente confuso. Meglio utilizzare oggetti più intuitivi che aiutino il cliente a capire come spostarsi-->
             <a  class="attiva"href="home.php">Home</a>
-            <a href="#">Aggiornamenti impianti</a>
+            <a href="news.html">Aggiornamenti impianti</a>
             <a href="skipass.php">Acquisto skipass</a>
             <div class="dropdown">
                 <button class="dropbtn">Esperienze
@@ -145,8 +145,8 @@ oppure in inglese-->
         <!-- I use a menu to link the pages, other buttons could be used, but the user might get
         slightly confused. Better to use more intuitive objects that help the customer understand how to move -->
         <a  class="attiva" href="home.php">Home</a>
-        <a href="#">Updates</a>
-        <a href="#">Purchase Lift Tickets</a>
+        <a href="news.html">Updates</a>
+        <a href="skipass.php">Purchase Lift Tickets</a>
         <div class="dropdown">
             <button class="dropbtn">Experiences
             </button>

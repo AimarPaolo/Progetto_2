@@ -4,6 +4,7 @@
     if(isset($_REQUEST["accetto"])){
         session_unset();
         session_destroy();
+        $acquisto = true;
     }
 ?>
 <!DOCTYPE html>
@@ -24,7 +25,7 @@
     <body>
     <div class="navbar">
         <a href="home.php">Home</a>
-        <a href="#">Aggiornamenti impianti</a>
+        <a href="news.html">Aggiornamenti impianti</a>
         <a class="attiva" href="skipass.php">Acquisto skipass</a>
         <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
         <div class="dropdown">
@@ -39,6 +40,12 @@
         <a href="carrello.php">Carrello</a>
     </div> 
     <h1>Acquista il tuo skipass</h1>
+    <?php
+        if(isset($acquisto) && $acquisto == true){
+            echo "<p class=\"successo\">biglietti acquistati correttamente</p>";
+            $acquisto = false;
+        }
+    ?>
     <!--in questo caso è necessario controllare che la data inserita sia superiore a quella -->
     <form action="carrello.php" method="get" name="form1" id="form1" onsubmit="return validateForm('form1');">
             <?php
