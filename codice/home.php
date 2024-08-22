@@ -51,7 +51,7 @@ oppure in inglese-->
             leggermente confuso. Meglio utilizzare oggetti più intuitivi che aiutino il cliente a capire come spostarsi-->
             <a  class="attiva"href="home.php">Home</a>
             <a href="#">Aggiornamenti impianti</a>
-            <a href="skipass.html">Acquisto skipass</a>
+            <a href="skipass.php">Acquisto skipass</a>
             <div class="dropdown">
                 <button class="dropbtn">Esperienze
                 </button>
@@ -60,6 +60,7 @@ oppure in inglese-->
                     <a href="attivita_invernali.html">Invernali</a>
                 </div>
         </div>
+        <a href="carrello.php">Carrello</a>
         <?php
         ?>
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">

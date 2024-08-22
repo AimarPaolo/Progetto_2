@@ -1,5 +1,10 @@
 <?php
     include("aperturaSessioni.php");
+    /*se accetto è selezionato vuol dire che ho fatto l'acquisto, allora elimino tutti i dati*/
+    if(isset($_REQUEST["accetto"])){
+        session_unset();
+        session_destroy();
+    }
 ?>
 <!DOCTYPE html>
 <html lang="it">
@@ -20,7 +25,7 @@
     <div class="navbar">
         <a href="home.php">Home</a>
         <a href="#">Aggiornamenti impianti</a>
-        <a class="attiva" href="skipass.html">Acquisto skipass</a>
+        <a class="attiva" href="skipass.php">Acquisto skipass</a>
         <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
         <div class="dropdown">
             <button class="dropbtn">
@@ -30,7 +35,8 @@
                 <a href="attivita_estive.html">Estive</a>
                 <a href="attivita_invernali.html">Invernali</a>
             </div>
-        </div>
+        </div> 
+        <a href="carrello.php">Carrello</a>
     </div> 
     <h1>Acquista il tuo skipass</h1>
     <!--in questo caso è necessario controllare che la data inserita sia superiore a quella -->
@@ -104,7 +110,7 @@
             ?>
         </div>
         <div>
-            <input type="submit" id="consegna" name="consegna" value="acquista">
+            <input type="submit" id="consegna" name="consegna" value="aggiungi al carrello">
         </div>
     </form>
     <!--inserito un logo che, una volta premuto, riporta alla pagina home del sito, verrà inserito in tutte le altre pagine del sito 

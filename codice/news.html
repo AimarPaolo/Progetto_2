@@ -9,10 +9,31 @@
         <!--in questo caso faccio un refresh della pagina ogni 600 sec per aggiornarla, non ha senso aggiornare molte volte questa pagina in quanto
         non ci sono dati che necessitano di aggiornare parecchie volte l'utente-->
         <meta http-equiv="refresh" content="600">
-        <link rel="stylesheet" href="../css/news.css">
-        <script src="news.js"></script>
+        <link rel="stylesheet" href="../css/skipass.css">
+        <script src="../javascript/news.js"></script>
     </head>
     <body>
+        https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+        <div class="navbar">
+            <a href="home.php">Home</a>
+            <a class="attiva" href="news.html">Aggiornamenti impianti</a>
+            <a href="skipass.php">Acquisto skipass</a>
+            <!--definisco un identificato per attivare il dropdown in quanto esiste già una classe dichiarata-->
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Esperienze
+                </button>
+                <div class="dropdown-content">
+                    <a href="attivita_estive.html">Estive</a>
+                    <a href="attivita_invernali.html">Invernali</a>
+                </div>
+            </div>
+            <a href="carrello.php">Carrello</a>
+        </div> 
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>ATTENZIONE!</strong> Pericolo valanghe! Chiusi gli impianti di Prato Nevoso.
+        </div>
         <a href="home.php"><img id="logo" src="../immagini/logo.jpg" alt="caricamento logo artesina"></a>
     <footer>
         <div>Contatti: </div>
