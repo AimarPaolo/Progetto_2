@@ -37,9 +37,12 @@ function validateForm(f1){
         return false;
     }else if(parseInt(array[1]) < parseInt(mese+1)){
         window.alert("L'anno inserito è corretto, ma non il mese. Controlla di aver inserito il mese corretto");
-    }else if(parseInt(array[2]) < parseInt(giorno)){
-        window.alert("Il giorno inserito è già passato, inseriscine un altro.")
         return false;
+    }else if(parseInt(array[2]) < parseInt(giorno)){
+        if(parseInt(array[1]) == parseInt(mese+1)){
+            window.alert("Il giorno inserito è già passato, inseriscine un altro.")
+            return false;
+        }
     }else{
         return true;
     }
